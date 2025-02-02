@@ -1,0 +1,32 @@
+/* Aplica un fondo y fuente a toda la aplicación */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f0f0f0;
+}
+
+/* Estilo para todas las etiquetas (Label, Text, etc.) */
+.label, .text {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+/* Estilo para los botones */
+.button {
+    -fx-background-color: #0088cc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+}
+
+/* Estilo para los TextField */
+.text-field {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+}
+
+/* Estilo para el Slider */
+.slider {
+    -fx-control-inner-background: #e6e6e6;
+}

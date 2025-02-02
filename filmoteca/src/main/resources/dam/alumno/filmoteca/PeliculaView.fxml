@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dam.alumno.filmoteca.PeliculaView">
+   <children>
+      <Label layoutX="60.0" layoutY="88.0" text="TITULO">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="142.0" text="ANO">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="195.0" text="DESCRIPCION">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="293.0" text="PUNTUACION">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="387.0" text="POSTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <!-- Campo de texto para la URL -->
+      <TextField fx:id="fieldPosterUrl" layoutX="196.0" layoutY="387.0" prefWidth="280.0" />
+      <!-- ImageView para mostrar la imagen del poster -->
+      <ImageView fx:id="imgPoster" fitHeight="200.0" fitWidth="150.0" layoutX="492.0" layoutY="340.0" preserveRatio="true" />
+      <Slider fx:id="sliderRating" blockIncrement="0.1" layoutX="128.0" layoutY="293.0" max="10" min="0" prefWidth="416.0" showTickLabels="true" showTickMarks="true" />
+      <TextArea fx:id="fieldDescripcion" layoutX="128.0" layoutY="195.0" prefHeight="60.0" prefWidth="416.0" wrapText="true" />
+      <TextField fx:id="fieldAno" layoutX="128.0" layoutY="142.0" prefHeight="25.0" prefWidth="416.0" />
+      <TextField fx:id="fieldTitulo" layoutX="128.0" layoutY="88.0" prefHeight="25.0" prefWidth="416.0" />
+      <ButtonBar layoutX="236.0" layoutY="454.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handlerAceptar" text="Aceptar" />
+            <Button mnemonicParsing="false" onAction="#handlerEliminar" text="Cancelar" />
+        </buttons>
+      </ButtonBar>
+      <Text fx:id="textoTitulo" layoutX="226.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREA LA PELICULA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
